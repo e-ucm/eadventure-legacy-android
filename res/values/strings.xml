@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  <e-Adventure> Mobile for Android(TM) is a port of the <e-Adventure> research project to 	the Android(TM) platform.
+         
+           Copyright 2009-2012 <e-UCM> research group.
+         
+           <e-UCM> is a research group of the Department of Software Engineering
+            and Artificial Intelligence at the Complutense University of Madrid
+            (School of Computer Science).
+         
+            C Profesor Jose Garcia Santesmases sn,
+            28040 Madrid (Madrid), Spain.
+        
+            For more info please visit:  <http://e-adventure.e-ucm.es/android> or
+            <http://www.e-ucm.es>
+         
+         	 *Android is a trademark of Google Inc.
+        	
+         ****************************************************************************
+      	 This file is part of <e-Adventure> Mobile, version 1.0.
+      
+     	 Main contributors - Roberto Tornero
+      
+      	 Former contributors - Alvaro Villoria 
+      						    Juan Manuel de las Cuevas
+      						    Guillermo Martin 	
+     
+      	 Directors - Baltasar Fernandez Manjon
+      				Eugenio Marchiori
+      
+          	 You can access a list of all the contributors to <e-Adventure> Mobile at:
+                 	http://e-adventure.e-ucm.es/contributors
+         
+         ****************************************************************************
+              <e-Adventure> Mobile is free software: you can redistribute it and/or modify
+             it under the terms of the GNU Lesser General Public License as published by
+             the Free Software Foundation, either version 3 of the License, or
+             (at your option) any later version.
+         
+             <e-Adventure> Mobile is distributed in the hope that it will be useful,
+             but WITHOUT ANY WARRANTY; without even the implied warranty of
+             MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+             GNU Lesser General Public License for more details.
+         
+             See <http://www.gnu.org/licenses/>
+-->
+<resources>
+    <string name="no_sd">No SDCard mounted</string>
+    <string name="external_storage">External storage</string>
+    <string name="app_name">eAdventure Mobile</string>
+    <string name="app_full_name">eAdventure Mobile for Android&#8482;</string>
+    <string name="app_description">Copyright 2009-2013 e-UCM research group.
+        e-UCM is a research group of the Department of Software Engineering
+        and Artificial Intelligence at the Complutense University of Madrid.
+        \n\nThe eAdventure Mobile logo has been inspired by the Android&#8482; 
+        Robot logo, created by Google&#8482; Inc and released under the Creative Commons 3.0 license. 
+        (creativecommons.org/licenses/by/3.0)
+        \nAndroid is a trademark of Google Inc.</string>        
+    <string name="install_app">Install</string>
+    <string name="skip_app">Skip</string>
+    
+	<string name="no_connection">No Wifi connection</string>
+	<string name="no_games">No games installed</string>
+	<string name="no_saved_games">No saved games</string>
+    <string name="actionbar_activity_not_found">Failed to open intent&#8230;</string>
+    <string name="installed_games">Installed games</string>
+    <string name="saved_games">Saved games</string>
+    <string name="games_repository">Games repository</string>
+    <string name="preferences">Preferences</string>
+    <string name="loading">Loading&#8230;</string>
+    
+    <string name="options">Options</string>
+    <string name="option_play">Play game</string>
+    <string name="option_uninstall">Uninstall game</string>
+    <string name="option_load">Load game</string>
+    <string name="option_delete">Delete game</string>
+    <string name="option_save">Save</string>
+    <string name="option_music_on">Music ON</string>
+    <string name="option_music_off">Music OFF</string>
+    <string name="option_quit">Quit game</string>
+    <string name="option_resize">Resize</string>
+    <string name="option_scan">Scan QRcode</string>
+    
+    <string name="removing">Removing game&#8230;</string>
+    <string name="success_removing">Saved game removed successfully</string>
+    <string name="installing">Installing game&#8230;</string>
+    <string name="repository">eAdventure repository</string>
+    <string name="retrieving_data">Retrieving data&#8230;</string>
+    <string name="wait">Please wait&#8230;</string>
+    <string name="start_download">Starting download</string>
+    
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_yes">Yes</string>
+    <string name="button_no">No</string>
+    <string name="button_contact">Contact us</string>
+    
+    <string name="gps_game">eAdventure geolocated game</string>
+    <string name="gps_message">You are about to start a geolocated game. GPS is currently disabled</string>
+    <string name="gps_enabling">Enable GPS</string>
+    <string name="wait_signal">Waiting for GPS signal&#8230;</string>    
+    <string name="qr_game">eAdventure QRcode game</string>
+    <string name="qr_message">You are about to start a QRcode-based game. 
+    Press the magnifier button on the options menu to capture QRcodes</string>
+    <string name="qr_message_app">You are about to start a QRcode-based game. 
+    You should install BarcodeScanner app in order to play it</string>
+    <string name="slot_name">Set slot name</string>
+    <string name="confirm_saved">Game saved</string>
+    <string name="confirm_saved_error">Error saving game</string>
+    <string name="confirm_saving">Do you want to save the game?</string>
+    <string name="video_message">You need to install RockPlayer Lite in order to play video assets. Video playback will crash if not installed.</string>
+    
+    <!-- SplashScreen -->
+    <string name="standalone_splash_title">Welcome to </string>
+    <string name="splash_title">Welcome to eAdventure</string>
+    <string name="splash_message">Please wait&#8230;
+    Setting up engine resources</string>
+</resources>

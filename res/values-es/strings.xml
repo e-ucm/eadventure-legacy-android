@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  <e-Adventure> Mobile for Android(TM) is a port of the <e-Adventure> research project to 	the Android(TM) platform.
+         
+           Copyright 2009-2012 <e-UCM> research group.
+         
+           <e-UCM> is a research group of the Department of Software Engineering
+            and Artificial Intelligence at the Complutense University of Madrid
+            (School of Computer Science).
+         
+            C Profesor Jose Garcia Santesmases sn,
+            28040 Madrid (Madrid), Spain.
+        
+            For more info please visit:  <http://e-adventure.e-ucm.es/android> or
+            <http://www.e-ucm.es>
+         
+         	 *Android is a trademark of Google Inc.
+        	
+         ****************************************************************************
+      	 This file is part of <e-Adventure> Mobile, version 1.0.
+      
+     	 Main contributors - Roberto Tornero
+      
+      	 Former contributors - Alvaro Villoria 
+      						    Juan Manuel de las Cuevas
+      						    Guillermo Martin 	
+     
+      	 Directors - Baltasar Fernandez Manjon
+      				Eugenio Marchiori
+      
+          	 You can access a list of all the contributors to <e-Adventure> Mobile at:
+                 	http://e-adventure.e-ucm.es/contributors
+         
+         ****************************************************************************
+              <e-Adventure> Mobile is free software: you can redistribute it and/or modify
+             it under the terms of the GNU Lesser General Public License as published by
+             the Free Software Foundation, either version 3 of the License, or
+             (at your option) any later version.
+         
+             <e-Adventure> Mobile is distributed in the hope that it will be useful,
+             but WITHOUT ANY WARRANTY; without even the implied warranty of
+             MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+             GNU Lesser General Public License for more details.
+         
+             See <http://www.gnu.org/licenses/>
+-->
+<resources>
+    <string name="no_sd">No se detecta tarjeta SD</string>
+    <string name="external_storage">Almacenamiento externo</string>
+    <string name="app_name">eAdventure Mobile</string>
+    <string name="app_full_name">eAdventure Mobile para Android&#8482;</string>
+    <string name="app_description">Copyright 2009-2013 grupo e-UCM.
+        e-UCM es un grupo de investigación del Departamento de Ingeniería del Software
+        e Inteligencia Artificial de la Universidad Complutense de Madrid.
+        El logo de eAdventure Mobile está inspirado en el logo de Android&#8482; 
+        (Robot logo), creado por Google&#8482; Inc y publicado bajo licencia Creative Commons 3.0. 
+        (creativecommons.org/licenses/by/3.0)
+        \nAndroid es una marca registrada de Google Inc.</string>        
+    <string name="install_app">Instalar</string>
+    <string name="skip_app">Saltar</string>
+    
+	<string name="no_connection">No hay conexión a Internet</string>
+	<string name="no_games">No hay juegos instalados</string>
+	<string name="no_saved_games">No hay partidas guardadas</string>
+    <string name="actionbar_activity_not_found">Fallo al abrir intent&#8230;</string>
+    <string name="installed_games">Juegos</string>
+    <string name="saved_games">Partidas</string>
+    <string name="games_repository">Repositorio</string>
+    <string name="preferences">Preferencias</string>
+    <string name="loading">Cargando&#8230;</string>
+    
+    <string name="options">Opciones</string>
+    <string name="option_play">Jugar</string>
+    <string name="option_uninstall">Desinstalar</string>
+    <string name="option_load">Cargar juego</string>
+    <string name="option_delete">Borrar juego</string>
+    <string name="option_save">Guardar</string>
+    <string name="option_music_on">Activar Música</string>
+    <string name="option_music_off">Desactivar Música</string>
+    <string name="option_quit">Salir del juego</string>
+    <string name="option_resize">Redimensionar</string>
+    <string name="option_scan">Escanear QRcode</string>
+    
+    <string name="removing">Quitar juego&#8230;</string>
+    <string name="success_removing">Partida borrada</string>
+    <string name="installing">Instalando juego&#8230;</string>
+    <string name="repository">Repositorio de eAdventure</string>
+    <string name="retrieving_data">Recuperando datos&#8230;</string>
+    <string name="wait">Por favor, espere&#8230;</string>
+    <string name="start_download">Comenzando descarga</string>
+    
+    <string name="button_ok">Aceptar</string>
+    <string name="button_cancel">Cancelar</string>
+    <string name="button_yes">Sí</string>
+    <string name="button_no">No</string>
+    <string name="button_contact">Contacta con nosotros</string>
+    
+    <string name="gps_game">Juego geolocalizado de eAdventure</string>
+    <string name="gps_message">Va a jugar a un juego geolocalizado. El GPS está actualmente desactivado.</string>
+    <string name="gps_enabling">Activar GPS</string>
+    <string name="wait_signal">Esperando GPS&#8230;</string>    
+    <string name="qr_game">Juego con QR Codes</string>
+    <string name="qr_message">Está a punto de iniciar un juego que utiliza QRcodes. 
+    Pulse el botón con forma de lupa en el menú de opciones para capturar QRcodes</string>
+    <string name="qr_message_app">Está a punto de iniciar un juego que utiliza QRcodes. 
+    Debe instalar la aplicación BarcodeScanner app para poder jugar</string>
+    <string name="slot_name">Nombre de la partida</string>
+    <string name="confirm_saved">Partida guardada</string>
+    <string name="confirm_saved_error">Error salvando partida</string>
+    <string name="confirm_saving">¿Quiere guardar la partida?</string>
+    <string name="video_message">Necesita instalar la aplicación RockPlayer Lite para ver videos. De lo contrario la reproducción de videos fallará.</string>
+    
+    <!-- SplashScreen -->
+	<string name="standalone_splash_title">Bienvenido a </string>
+    <string name="splash_title">Bienvenido a eAdventure</string>
+    <string name="splash_message">Por favor espere&#8230;
+    Configurando recursos necesarios.</string>
+</resources>

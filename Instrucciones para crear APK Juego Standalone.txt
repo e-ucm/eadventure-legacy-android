@@ -1,0 +1,80 @@
+0) icon.png
+   --------
+   Genera un icono 72x72 llamado 'icon.png' y colócalo en la raíz de la carpeta del juego para el que quieres generar la app.
+   Este icono es únicamente para su visualización en el motor de eAdventure, por lo que el paso es opcional para generar una
+   versión standalone del juego, y obligatorio cuando se exporta el juego para lanzarlo desde la aplicación eAdventure Mobile.
+
+1) juego.ead
+   ---------
+   Exporta el juego en formato ead. Puedes poner el nombre de fichero que quieras, pero de ahora en adelante supondremos que
+   se llama 'juego.ead'.
+   
+2) juego.ead ==> assets/
+   ---------------------
+   	Coloca el fichero 'juego.ead' dentro de la carpeta 'assets' del proyecto Eclipse de eAdventure Android Mobile.
+	Pueden incluirse tantos juegos como se desee dentro de la carpeta assets. Todos ellos se descomprimirán en la carpeta
+	EAdAndroid que se crea dentro de la tarjeta SD del dispositivo cuando se instala eAdventure. En cualquier caso no se
+	recomienda abusar de esta funcionalidad porque aumenta mucho el peso de la aplicación. 
+
+3) es.eucm.androidgames.standalonegame ==> es.eucm.androidgames.juego
+   ------------------------------------------------------------------
+   Duplicar el paquete es.eucm.androidgames.standalonegame (contiene tres clases) y renombrarlo sustituyendo 'standalonegame' por el nombre del juego.
+   De ahora en adelante, éste será el NOMBRE DE PAQUETE de tu App.
+   
+   Ejemplo: es.eucm.androidgames.damaboba
+   
+   Las clases internas no hay que tocarlas, únicamente asegurarse de que se crea un paquete nuevo.
+   Esto es necesario porque Android no deja que haya dos aplicaciones con el mismo nombre de paquete instaladas en el mismo dispositivo y por tanto,
+   no se podría tener dos juegos instalados en el mismo dispositivo.
+     
+4) AndroidManifest_game.xml --> AndroidManifest.xml
+   ------------------------------------------------
+   Sustituir el fichero 'AndroidManifest.xml' por el fichero 'AndroidManifest_game.xml'. Por seguridad, comprueba antes 
+   que el fichero 'AndroidManifest_app.xml' contiene una copia de seguridad del mismo (necesitarás restituirlo al final).
+
+5) 3 o 4 cambios en AndroidManifest.xml
+   ------------------------------------
+   - Reemplaza el nombre del paquete (package) por tu nombre de paquete, según lo hayas especificado en el paso 3.
+   - Reemplaza la etiqueta de la aplicación (android:label) por la etiqueta que quieras que vea el usuario (e.g. "La Dama Boba").
+   - Reemplaza el valor del meta dato android:name="es.eucm.eadandroid.launchgame" con el nombre de fichero de tu juego, tal y como lo añadiste
+     a la carpeta assets en el paso 2. En este caso, sería juego.ead
+   - Recuerda poner la propiedad debuggable a false antes de generar la aplicación para ponerla en producción.
+
+6) drawable-long/ y drawable-notlong/
+   ----------------------------------
+   Crea una subcarpeta dentro de la carpeta "res/" que se llame drawable-long y otra drawable-notlong/. Esto nos servirá para decirle a Android que utilice unos iconos
+   y splash screen distintos de los habituales, pues drawable-long/ y drawable-notlong/ tienen mayor prioridad que drawable-hdpi y drawable-mdpi
+   
+7) dialog_icon.png 			=> drawable-long/   (72x72)
+   notification_icon.png 	=> drawable-long/   (72x72)
+   splash_screen.png		=> drawable-long/   (900x1500)
+   standalone_game_icon.png => drawable-long/   (72x72)
+   -------------------------------------------------------
+   Genera cuatro imágenes con las características anteriores y colócales en la carpeta drawable-long/ que acabas de crear. No puedes cambiar
+   ningún nombre de fichero.
+
+8) drawable-long/* => drawable-notlong/*
+   --------------------------------------
+   Copia también esas 4 imágenes a la carpeta drawable-notlong/
+   
+9) Compila (aparecerán errores)
+   ----------------------------
+   Al haber cambiado el Android Manifest, el compilador genera la clase R dentro de un paquete que no es es.eucm.eadandroid. Por tanto, salen muchos 
+   errores de compilación.
+
+10) gen/es.eucm.androidgames.juego ==> gen/es.eucm.eadandroid
+    ---------------------------------------------------------
+    Para arreglar los problemas encontrados antes, simplemente duplica el paquete es.eucm.androidgames.juego generado automáticamente dentro de la 
+    carpeta gen/. Al nuevo paquete dale el nombre es.eucm.eadandroid. Vuelve a compilar y desaparecerán los problemas de compilación.
+
+11) Generar la app.
+    --------------
+    Genera el fichero apk (por ejemplo, lanzando la aplicación con un terminal Android conectado al equipo). 
+
+12) Cleanup.
+    --------
+    Borra los ficheros que has generado:
+    - Paquete es.eucm.androidgames.juego (Dentro de src/), Paso 3
+    - Fichero juego.ead (dentro de assets/), Paso 2
+    - Carpetas drawable-long y drawable-notlong/, Paso 6-8
+    - Reemplaza el fichero AndroidManifest.xml por el archivo original (AndroidManifest_app.xml). 

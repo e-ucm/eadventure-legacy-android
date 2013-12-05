@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  <e-Adventure> Mobile for Android(TM) is a port of the <e-Adventure> research project to 	the Android(TM) platform.
+         
+           Copyright 2009-2012 <e-UCM> research group.
+         
+           <e-UCM> is a research group of the Department of Software Engineering
+            and Artificial Intelligence at the Complutense University of Madrid
+            (School of Computer Science).
+         
+            C Profesor Jose Garcia Santesmases sn,
+            28040 Madrid (Madrid), Spain.
+        
+            For more info please visit:  <http://e-adventure.e-ucm.es/android> or
+            <http://www.e-ucm.es>
+         
+         	 *Android is a trademark of Google Inc.
+        	
+         ****************************************************************************
+      	 This file is part of <e-Adventure> Mobile, version 1.0.
+      
+     	 Main contributors - Roberto Tornero
+      
+      	 Former contributors - Alvaro Villoria 
+      						    Juan Manuel de las Cuevas
+      						    Guillermo Martin 	
+     
+      	 Directors - Baltasar Fernandez Manjon
+      				Eugenio Marchiori
+      
+          	 You can access a list of all the contributors to <e-Adventure> Mobile at:
+                 	http://e-adventure.e-ucm.es/contributors
+         
+         ****************************************************************************
+              <e-Adventure> Mobile is free software: you can redistribute it and/or modify
+             it under the terms of the GNU Lesser General Public License as published by
+             the Free Software Foundation, either version 3 of the License, or
+             (at your option) any later version.
+         
+             <e-Adventure> Mobile is distributed in the hope that it will be useful,
+             but WITHOUT ANY WARRANTY; without even the implied warranty of
+             MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+             GNU Lesser General Public License for more details.
+         
+             See <http://www.gnu.org/licenses/>
+-->
+<set xmlns:android="http://schemas.android.com/apk/res/android" android:shareInterpolator="false">
+
+	<scale 
+		android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+		android:fromXScale="1.0" 
+		android:toXScale="1.4" 
+		android:fromYScale="1.0" 
+		android:toYScale="0.6" 
+		android:pivotX="50%"
+		android:pivotY="50%"
+		android:fillAfter="false"
+		android:duration="700" />
+
+
+	<set 
+		android:interpolator="@android:anim/accelerate_interpolator"
+                android:startOffset="700">
+		
+		<scale
+			android:fromXScale="1.4" 
+			android:toXScale="0.0"
+		        android:fromYScale="0.6"
+	 		android:toYScale="0.0" 
+	 		android:pivotX="50%" 
+	 		android:pivotY="50%" 
+	 		android:duration="400" />
+ 		
+		<rotate 
+			android:fromDegrees="0" 
+			android:toDegrees="-45"
+	 		android:toYScale="0.0" 
+	 		android:pivotX="50%" 
+	 		android:pivotY="50%"
+	 		android:duration="400" />
+	</set>
+
+</set>
+

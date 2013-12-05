@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  <e-Adventure> Mobile for Android(TM) is a port of the <e-Adventure> research project to 	the Android(TM) platform.
+         
+           Copyright 2009-2012 <e-UCM> research group.
+         
+           <e-UCM> is a research group of the Department of Software Engineering
+            and Artificial Intelligence at the Complutense University of Madrid
+            (School of Computer Science).
+         
+            C Profesor Jose Garcia Santesmases sn,
+            28040 Madrid (Madrid), Spain.
+        
+            For more info please visit:  <http://e-adventure.e-ucm.es/android> or
+            <http://www.e-ucm.es>
+         
+         	 *Android is a trademark of Google Inc.
+        	
+         ****************************************************************************
+      	 This file is part of <e-Adventure> Mobile, version 1.0.
+      
+     	 Main contributors - Roberto Tornero
+      
+      	 Former contributors - Alvaro Villoria 
+      						    Juan Manuel de las Cuevas
+      						    Guillermo Martin 	
+     
+      	 Directors - Baltasar Fernandez Manjon
+      				Eugenio Marchiori
+      
+          	 You can access a list of all the contributors to <e-Adventure> Mobile at:
+                 	http://e-adventure.e-ucm.es/contributors
+         
+         ****************************************************************************
+              <e-Adventure> Mobile is free software: you can redistribute it and/or modify
+             it under the terms of the GNU Lesser General Public License as published by
+             the Free Software Foundation, either version 3 of the License, or
+             (at your option) any later version.
+         
+             <e-Adventure> Mobile is distributed in the hope that it will be useful,
+             but WITHOUT ANY WARRANTY; without even the implied warranty of
+             MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+             GNU Lesser General Public License for more details.
+         
+             See <http://www.gnu.org/licenses/>
+-->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Used in View/Spinner1.java -->
+    <string-array name="colors" tools:ignore="MissingTranslation">
+        <item>red</item>
+        <item>orange</item>
+        <item>yellow</item>
+        <item>green</item>
+        <item>blue</item>
+        <item>violet</item>
+    </string-array>
+    
+    <!-- Used in View/Spinner1.java -->
+    <string-array name="planets" tools:ignore="MissingTranslation">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+        <item>Pluto</item>
+    </string-array>
+
+    <!-- Used in App/SearchInvoke.java -->
+    <string-array name="search_menuModes" tools:ignore="MissingTranslation">
+        <item>Search Key</item>
+        <item>Menu Item</item>
+        <item>Type-To-Search</item>
+        <item>Disabled</item>
+    </string-array>
+    
+    <!-- Used in app/dialog examples -->
+    <string-array name="select_dialog_items" tools:ignore="MissingTranslation">
+        <item>Command one</item>
+        <item>Command two</item>
+        <item>Command three</item>
+        <item>Command four</item>
+    </string-array>
+    
+    <string-array name="select_dialog_items2" tools:ignore="MissingTranslation">
+        <item>Map</item>
+        <item>Satellite</item>
+        <item>Traffic</item>
+        <item>Street view</item>
+    </string-array>
+    
+    <string-array name="select_dialog_items3" tools:ignore="MissingTranslation">
+        <item>Every Monday</item>
+        <item>Every Tuesday</item>
+        <item>Every Wednesday</item>
+        <item>Every Thursday</item>
+        <item>Every Friday</item>
+        <item>Every Saturday</item>
+        <item>Every Sunday</item>
+    </string-array>
+    
+    <!-- Used in app/menu examples -->
+    <string-array name="entries_list_preference" tools:ignore="MissingTranslation">
+        <item>Alpha Option 01</item>
+        <item>Beta Option 02</item>
+        <item>Charlie Option 03</item>  
+    </string-array>
+
+    <!-- Used in app/menu examples -->
+    <string-array name="entryvalues_list_preference" tools:ignore="MissingTranslation">
+        <item>alpha</item>
+        <item>beta</item>
+        <item>charlie</item>  
+    </string-array>
+    
+</resources>

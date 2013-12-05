@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  <e-Adventure> Mobile for Android(TM) is a port of the <e-Adventure> research project to 	the Android(TM) platform.
+         
+           Copyright 2009-2012 <e-UCM> research group.
+         
+           <e-UCM> is a research group of the Department of Software Engineering
+            and Artificial Intelligence at the Complutense University of Madrid
+            (School of Computer Science).
+         
+            C Profesor Jose Garcia Santesmases sn,
+            28040 Madrid (Madrid), Spain.
+        
+            For more info please visit:  <http://e-adventure.e-ucm.es/android> or
+            <http://www.e-ucm.es>
+         
+         	 *Android is a trademark of Google Inc.
+        	
+         ****************************************************************************
+      	 This file is part of <e-Adventure> Mobile, version 1.0.
+      
+     	 Main contributors - Roberto Tornero
+      
+      	 Former contributors - Alvaro Villoria 
+      						    Juan Manuel de las Cuevas
+      						    Guillermo Martin 	
+     
+      	 Directors - Baltasar Fernandez Manjon
+      				Eugenio Marchiori
+      
+          	 You can access a list of all the contributors to <e-Adventure> Mobile at:
+                 	http://e-adventure.e-ucm.es/contributors
+         
+         ****************************************************************************
+              <e-Adventure> Mobile is free software: you can redistribute it and/or modify
+             it under the terms of the GNU Lesser General Public License as published by
+             the Free Software Foundation, either version 3 of the License, or
+             (at your option) any later version.
+         
+             <e-Adventure> Mobile is distributed in the hope that it will be useful,
+             but WITHOUT ANY WARRANTY; without even the implied warranty of
+             MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+             GNU Lesser General Public License for more details.
+         
+             See <http://www.gnu.org/licenses/>
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory android:title="Engine Preferences">
+                <CheckBoxPreference android:id="@+id/check_box_pref_0"
+                        android:title="Enable audio"
+                        android:defaultValue="true"
+                        android:summary="Enable or disable audio"
+                        android:key="AudioPref" />
+                <CheckBoxPreference android:id="@+id/check_box_pref_1"
+                        android:title="Enable vibration"
+                        android:defaultValue="true"
+                        android:summary="Enable or disable vibration"
+                        android:key="VibratePref" />             
+        </PreferenceCategory>
+        <PreferenceCategory android:title="Developers">
+        		<CheckBoxPreference android:id="@+id/check_box_pref_2"
+                        android:title="Enable debugging"
+                        android:defaultValue="false"
+                        android:summary="Enable or disable debugging overlay"
+                        android:key="DebugPref" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="eAdventure games">
+               	<PreferenceScreen android:id="@+id/pref_screen_0"
+                android:title="Install from SDCard"
+                android:summary="Install ead games from external storage"
+                android:key="InstallPref"/>
+        </PreferenceCategory>
+        <PreferenceCategory android:title="Help">
+        		<PreferenceScreen android:id="@+id/pref_screen_1"
+                android:title="About"
+                android:summary="About eAdventure Mobile"
+                android:key="WebPref"/>
+        </PreferenceCategory>
+</PreferenceScreen>

@@ -5,3 +5,7 @@
 
 # Maven
 target/
+
+#Build and Gen Folders
+bin/
+gen/

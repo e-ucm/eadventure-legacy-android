@@ -37,7 +37,7 @@
    - Reemplaza el nombre del paquete (package) por tu nombre de paquete, según lo hayas especificado en el paso 3.
    - Reemplaza la etiqueta de la aplicación (android:label) por la etiqueta que quieras que vea el usuario (e.g. "La Dama Boba").
    - Reemplaza el valor del meta dato android:name="es.eucm.eadandroid.launchgame" con el nombre de fichero de tu juego, tal y como lo añadiste
-     a la carpeta assets en el paso 2. En este caso, sería juego.ead
+     a la carpeta assets en el paso 2 pero sin la extensión ".ead". En este caso, sería juego a secas.
    - Recuerda poner la propiedad debuggable a false antes de generar la aplicación para ponerla en producción.
 
 6) drawable-long/ y drawable-notlong/

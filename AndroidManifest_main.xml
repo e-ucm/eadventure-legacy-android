@@ -46,18 +46,10 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	
-	package="es.eucm.androidgames.###YOUR_GAME_NAME_HERE###" android:versionCode="###VERSION_CODE###"
-	android:versionName="###VERSION_NAME###">
+	package="es.eucm.eadandroid" android:versionCode="1"
+	android:versionName="1.0">
 	
-	<!-- ###############################################################
-	 1) Replace YOUR_GAME_NAME_HERE in the line above by the name of the game. Type it exactly as 
-	    you did when you created the es.eucm.androidgames.yourgame package containing 3 classes 
-	    (SCoreActivity, SCoreVideo, StandaloneSplashScreen).
-	    
-	    Example:
-	    
-	    es.eucm.androidgames.damaboba
-	 ############################################################### -->    
+    <!-- package="@string/package_name"  android:versionCode="1" android:versionName="1.0"> -->
 	
     <uses-sdk android:minSdkVersion="10" />
     
@@ -67,37 +59,12 @@
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 	<!--  <uses-permission android:name="android.permission.CONTROL_LOCATION_UPDATES"/>-->
 	<uses-permission android:name="android.permission.VIBRATE" />
-	
-	<application 
-	    android:label="##APPLICATION LABEL HERE##"
-		android:debuggable="true" android:theme="@android:style/Theme.NoTitleBar"
-		android:icon="@drawable/standalone_game_icon">
-
-		 <!-- ###############################################################
-		 2) Replace ##APPLICATION LABEL HERE## in the line above by the App's label you want the user
-		    to see. You can either use the i18n or type it directly here 
-		    
-		    Example:
-		    
-		    La Dama Boba
-		 ############################################################### -->    
-	    
-		<!-- ###############################################################
-		 2*) Remember to setup android:debuggable to false before you put the app in production!
-		 ############################################################### -->    
-	    		
-		<activity android:name="StandaloneSplashScreen" android:screenOrientation="portrait">
-		    <meta-data android:name="es.eucm.eadandroid.launchgame" android:value="###GAME FILE NAME HERE###" />
-			 <!-- ###############################################################
-			 3) Replace ###GAME FILE NAME HERE### in the line above by the name of the Game's EAD file you want
-			    your app to launch. Type it exactly as it is shown in the filename under the assets folder
-			    
-			    Example:
-			    
-			    If your game file is shown as 'LA DAMA BOBA.ead' under assets, then you should replace
-			    '###GAME FILE NAME HERE###' by 'LA DAMA BOBA' 
-			 ############################################################### -->    
-		    		    
+    
+	<application android:label="@string/app_name"
+		android:debuggable="false" android:theme="@android:style/Theme.NoTitleBar"
+		android:icon="@drawable/launcher_icon2">
+		
+		<activity android:name=".homeapp.SplashScreenActivity" android:screenOrientation="portrait">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />			
 				<category android:name="android.intent.category.LAUNCHER" />			
@@ -106,15 +73,29 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <!-- <data android:scheme="file" android:host="*" android:mimeType="*/*" android:pathPattern=".*\\.ead" /> -->
+                <data android:scheme="file" android:host="*" android:mimeType="*/*" android:pathPattern=".*\\.ead" />
             </intent-filter>
 		</activity>
 
-		<activity android:name=".SCoreActivity"
+		<activity android:name=".homeapp.WorkspaceActivity"></activity>
+			<activity android:name=".homeapp.HomeActivity"></activity>
+		<activity android:name=".homeapp.localgames.LocalGamesActivity"></activity>
+		<activity android:name=".homeapp.preferences.PreferencesActivity"></activity>
+		<activity android:name=".homeapp.preferences.AboutActivity"></activity>
+		<activity android:name=".homeapp.repository.RepositoryActivity"></activity>
+
+
+		<activity android:name=".ecore.ECoreActivity"
 			android:alwaysRetainTaskState="true" android:screenOrientation="landscape"></activity>				
-		<activity android:name=".ScoreVideo"
+		<activity android:name=".ecore.EcoreVideo"
 			android:screenOrientation="landscape"></activity>
-		
+		<activity android:name=".homeapp.loadsavedgames.LoadSavedGames"></activity>
+		<activity
+			android:name=".homeapp.preferences.LaunchAndExplorerActivity"></activity>
+		<activity android:name=".ecore.ECoreControl"
+		android:alwaysRetainTaskState="true" android:screenOrientation="landscape"></activity>
+
+
 	</application>
 	
 </manifest> 

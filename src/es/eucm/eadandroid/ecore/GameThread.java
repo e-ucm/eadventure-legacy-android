@@ -94,7 +94,8 @@ public class GameThread extends Thread {
 		
 		d.getMetrics(dm);
 		
-		float scaleDensity = dm.density;	
+		float scaleDensity = dm.density;
+		System.out.println("[****SCALE DENSITY****] "+scaleDensity);
 				
 		GUI.create(holder, context);
 		ContextServices.create(context);

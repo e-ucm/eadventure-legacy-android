@@ -123,7 +123,18 @@ public class Magnifier {
 	public Magnifier(int not_scaled_radius, int not_scaled_frameWidth, float zoom, Bitmap bmp) {
 
 		this.radius = (int) (not_scaled_radius * GUI.DISPLAY_DENSITY_SCALE);
-		CENTER_OFFSET = (int) (30 * GUI.DISPLAY_DENSITY_SCALE);
+		//CENTER_OFFSET = (int) (30 * GUI.DISPLAY_DENSITY_SCALE);
+		/*
+		 * In former versions, CENTER_OFFSET was ALWAYS set up by multiplying DISPLAY_DENSITY_SCALE by 30. No idea why that was needed, but in old devices
+		 * it worked just fine. In new devices with high density screens the magnifier looked misplaced, shifted a little bit on the positive Y axis. 
+		 * To solve that, in high density devices (e.g. Nexus 4, 5, 10, 7, etc), which have logical density greater than 1.5 (2.0 or even 3.0), we don't
+		 * multiply the density scale by 30. 
+		 */
+		if (GUI.DISPLAY_DENSITY_SCALE<1.5){
+			CENTER_OFFSET = (int) (GUI.DISPLAY_DENSITY_SCALE);
+		} else {
+			CENTER_OFFSET = (int) (30*GUI.DISPLAY_DENSITY_SCALE);
+		}
 
 		magBounds = new Rect(0, 0, radius * 2, radius * 2);
 		magBoundsIntersected = new Rect(0, 0, radius * 2, radius * 2);

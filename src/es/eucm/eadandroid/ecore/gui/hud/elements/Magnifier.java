@@ -130,7 +130,7 @@ public class Magnifier {
 		 * To solve that, in high density devices (e.g. Nexus 4, 5, 10, 7, etc), which have logical density greater than 1.5 (2.0 or even 3.0), we don't
 		 * multiply the density scale by 30. 
 		 */
-		if (GUI.DISPLAY_DENSITY_SCALE<1.5){
+		if (GUI.DISPLAY_DENSITY_SCALE>=1.5){
 			CENTER_OFFSET = (int) (GUI.DISPLAY_DENSITY_SCALE);
 		} else {
 			CENTER_OFFSET = (int) (30*GUI.DISPLAY_DENSITY_SCALE);

@@ -274,7 +274,7 @@ public class ActiveArea extends Item implements Rectangle {
         aa.points = ( points != null ? new ArrayList<Point>( ) : null );
         for( Point p : points )
         {      	
-        	// el apa–o!! 
+        	// el apaâ€“o!! 
         	Point paux = new Point(p);
             aa.points.add( paux );            
         }

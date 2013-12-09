@@ -168,7 +168,7 @@ public class File extends java.io.File {
         }
         catch( Exception e ) {
             copied = false;
-            //System.out.println("QUE EXCEPCI”N M¡S CHUNGA!");
+            //System.out.println("QUE EXCEPCI√ìN M√ÅS CHUNGA!");
             //Controller.getInstance().showErrorDialog( TextConstants.getText("Error.Title"), TextConstants.getText("Error.CopyingFiles", new String[]{origin.getAbsolutePath( ), destiny.getName( )}) );
         }
 

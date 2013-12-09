@@ -628,7 +628,7 @@ public class Exit implements Cloneable, Documented, Rectangle, Positioned {
         if( points != null ) {
             e.points = new ArrayList<Point>( );
             for( Point p : points ) {
-           // el apa–o!! 	
+           // el apaâ€“o!! 	
             	Point paux = new Point(p);
                 e.points.add( paux );
                 

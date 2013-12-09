@@ -513,7 +513,7 @@ public class ECoreActivity extends Activity implements SurfaceHolder.Callback {
 		if (locale.toLowerCase().contains("es")){
 			eadLocale="es_ES";
 		}
-		/* We«e got to set the language from the device locale ;D */
+		/* WeÂ«e got to set the language from the device locale ;D */
 		setLanguage(eadLocale);
 
 		// DEBUG
@@ -593,7 +593,7 @@ public class ECoreActivity extends Activity implements SurfaceHolder.Callback {
 		// control them
 		if (Game.getInstance() != null)
 			if (Game.getInstance().getFunctionalScene() != null)
-				// es una ñapa pero es q no hay otra, esto es xq
+				// es una Ã±apa pero es q no hay otra, esto es xq
 				// hay video que tienen el sonido aparte entonces no podemos
 				// quitarle el sonido solo en este caso
 					Game.getInstance().getFunctionalScene()

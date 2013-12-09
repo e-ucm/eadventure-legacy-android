@@ -67,7 +67,7 @@ public class Scene extends GeneralScene implements Positioned {
     public static final int PLAYER_WITHOUT_LAYER = -1;
 
     /**
-     * The value of player layer in 1บ person adventures
+     * The value of player layer in 1ยบ person adventures
      */
     public static final int PLAYER_NO_ALLOWED = -2;
 

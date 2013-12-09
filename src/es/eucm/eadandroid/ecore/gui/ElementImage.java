@@ -158,7 +158,7 @@ class ElementImage {
 	}
 
 	/**
-	 * Changes the element´s depth
+	 * Changes the elementÂ´s depth
 	 * 
 	 * @param depth
 	 */

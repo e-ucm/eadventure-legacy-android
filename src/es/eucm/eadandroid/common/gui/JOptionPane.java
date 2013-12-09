@@ -55,7 +55,7 @@ public class JOptionPane {
 	public static void showMessageDialog(Object object, String errorMessage,
 			String errorTitle, int errorType) {
 		
-	    AlertDialog.Builder builder = new AlertDialog.Builder(null); /* Tengo que a–adirle el contexto */
+	    AlertDialog.Builder builder = new AlertDialog.Builder(null); /* Tengo que aâ€“adirle el contexto */
 	    builder.setMessage(errorMessage)
 	           .setCancelable(true)
 	           .setNeutralButton("OK",new DialogInterface.OnClickListener() {

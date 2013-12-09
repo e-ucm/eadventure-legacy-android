@@ -52,8 +52,8 @@ import java.net.URL;
 import es.eucm.eadandroid.common.auxiliar.File;
 
 /**
- * @author Cañizal, G., Del Blanco, A., Torrente, F.J. (alphabetical order) *
- * @author López Mañas, E., Pérez Padilla, F., Sollet, E., Torijano, B. (former
+ * @author CaÃ±izal, G., Del Blanco, A., Torrente, F.J. (alphabetical order) *
+ * @author LÃ³pez MaÃ±as, E., PÃ©rez Padilla, F., Sollet, E., Torijano, B. (former
  *         developers by alphabetical order)
  * 
  */

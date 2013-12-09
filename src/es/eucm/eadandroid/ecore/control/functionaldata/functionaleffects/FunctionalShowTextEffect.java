@@ -128,7 +128,7 @@ public class FunctionalShowTextEffect extends FunctionalEffect {
     @Override
     public void triggerEffect( ) {
 
-        // FIXME: Convendría cambiar esto para que no se use un timer
+        // FIXME: ConvendrÃ­a cambiar esto para que no se use un timer
     	
     	timer = new Timer();
     	

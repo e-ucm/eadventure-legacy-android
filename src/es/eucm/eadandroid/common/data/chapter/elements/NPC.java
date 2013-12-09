@@ -149,7 +149,7 @@ public class NPC extends Element {
         textBorderColor = "#000000";
         showsSpeechBubbles = false;
         bubbleBkgColor = "#FFFFFF";
-        bubbleBorderColor = "#000000"; // TODO he a–adido un 0
+        bubbleBorderColor = "#000000"; // TODO he aâ€“adido un 0
     }
 
     /**

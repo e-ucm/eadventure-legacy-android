@@ -50,9 +50,9 @@ package es.eucm.eadandroid.common.auxiliar;
  * University of Madrid (Spain).
  * 
  * @author Del Blanco, A., Marchiori, E., Torrente, F.J. (alphabetical order) *
- * @author LÛpez MaÒas, E., PÈrez Padilla, F., Sollet, E., Torijano, B. (former
+ * @author L√≥pez Ma√±as, E., P√©rez Padilla, F., Sollet, E., Torijano, B. (former
  *         developers by alphabetical order)
- * @author Moreno-Ger, P. & Fern·ndez-ManjÛn, B. (directors)
+ * @author Moreno-Ger, P. & Fern√°ndez-Manj√≥n, B. (directors)
  * @year 2009 Web-site: http://e-adventure.e-ucm.es
  *//*
 
@@ -637,7 +637,7 @@ public class ReportDialog extends JDialog {
 
     }
 
-    //TODO: eliminar este método, se añadió para las pruebas de medicina
+    //TODO: eliminar este m≈Ωtodo, se a‚Äìadi‚Äî para las pruebas de medicina
     public static void sendReport(String comment) {
         try {
             URL url = new URL( "http://backend-ea.e-ucm.es/reports.php" );

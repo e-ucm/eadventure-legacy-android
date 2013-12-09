@@ -142,7 +142,7 @@ public abstract class AnimationState {
         } else {
             if( Math.abs( getVelocityY( ) ) > Math.abs( getVelocityX( ) ) ) {
                 //Si baja
-                //FIXME: EL = del IF se ha puesto a pelo, sin ver que pasa en juegos 3ªpersona
+                //FIXME: EL = del IF se ha puesto a pelo, sin ver que pasa en juegos 3Âªpersona
                 if( getVelocityY( ) >= 0 ) {
                     tempDirection = SOUTH;
                 }
@@ -153,7 +153,7 @@ public abstract class AnimationState {
             }
             else {
                 //Si a la derecha
-                //FIXME: EL = del IF se ha puesto a pelo, sin ver que pasa en juegos 3ªpersona
+                //FIXME: EL = del IF se ha puesto a pelo, sin ver que pasa en juegos 3Âªpersona
                 if( getVelocityX( ) >= 0 ) {
                     tempDirection = EAST;
                 }

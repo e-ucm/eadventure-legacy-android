@@ -197,7 +197,7 @@ public class FunctionalBookTitle extends FunctionalBookParagraph {
                 y += ( FunctionalTextBook.PAGE_TEXT_HEIGHT - ( y % FunctionalTextBook.PAGE_TEXT_HEIGHT ) );
             }
 
-            // TODO ¿parche?
+            // TODO Â¿parche?
             
             c.drawText( line, x, y + FunctionalTextBook.TITLE_HEIGHT - 15, p);
  

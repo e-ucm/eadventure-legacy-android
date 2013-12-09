@@ -165,7 +165,7 @@ public class GameStateRunEffects extends GameState {
         }
 
         // Special conditions for the play animation effect
-        // FIXME Edu: ¿Mover esto de aqui?
+        // FIXME Edu: Â¿Mover esto de aqui?
         else if( currentExecutingEffect != null && currentExecutingEffect.isStillRunning( ) ) {
             // I've modified this (JAvier): I've replaced mouseClickedButton==MouseEvent.BUTTON3 
             // by ( mouseClickedButton == MouseEvent.BUTTON1

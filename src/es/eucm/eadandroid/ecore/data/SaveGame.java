@@ -208,7 +208,7 @@ public class SaveGame implements Serializable {
 
         String mark = str[0];
         mark += "#";
-        // if there aren´t anything after the mark
+        // if there arenÂ´t anything after the mark
         if( str.length == 2 ) {
             if( str[1].contains( "&" ) ) {
                 if( mark.equals( TITLEMARK ) ) {

@@ -181,7 +181,7 @@ public class TimerManager {
      * Change the state, the timeUpdate and lastUpdate of indexed timer when a
      * game is loaded
      * 
-     * @return -1 if the parameter "i" does´t fit with "ID", "i" in other case
+     * @return -1 if the parameter "i" doesÂ´t fit with "ID", "i" in other case
      */
     public int changeValueOfTimer( int i, SaveTimer st ) {
 
@@ -311,7 +311,7 @@ public class TimerManager {
         private TimerEventListener listener;
 
         /**
-         * True if it is an assessment functional timer, false if it isn´t
+         * True if it is an assessment functional timer, false if it isnÂ´t
          */
         private boolean isAssessmentTimer;
 

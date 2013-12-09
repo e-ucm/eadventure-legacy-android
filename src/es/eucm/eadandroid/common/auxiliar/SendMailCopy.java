@@ -50,9 +50,9 @@ package es.eucm.eadandroid.common.auxiliar;
  * University of Madrid (Spain).
  * 
  * @author Del Blanco, A., Marchiori, E., Torrente, F.J. (alphabetical order) *
- * @author López Mañas, E., Pérez Padilla, F., Sollet, E., Torijano, B. (former
+ * @author LÃ³pez MaÃ±as, E., PÃ©rez Padilla, F., Sollet, E., Torijano, B. (former
  *         developers by alphabetical order)
- * @author Moreno-Ger, P. & Fernández-Manjón, B. (directors)
+ * @author Moreno-Ger, P. & FernÃ¡ndez-ManjÃ³n, B. (directors)
  * @year 2009 Web-site: http://e-adventure.e-ucm.es
  *//*
 

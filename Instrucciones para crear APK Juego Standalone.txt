@@ -1,8 +1,8 @@
 0) icon.png
    --------
-   Genera un icono 72x72 llamado 'icon.png' y colÛcalo en la raÌz de la carpeta del juego para el que quieres generar la app.
-   Este icono es ˙nicamente para su visualizaciÛn en el motor de eAdventure, por lo que el paso es opcional para generar una
-   versiÛn standalone del juego, y obligatorio cuando se exporta el juego para lanzarlo desde la aplicaciÛn eAdventure Mobile.
+   Genera un icono 72x72 llamado 'icon.png' y col√≥calo en la ra√≠z de la carpeta del juego para el que quieres generar la app.
+   Este icono es √∫nicamente para su visualizaci√≥n en el motor de eAdventure, por lo que el paso es opcional para generar una
+   versi√≥n standalone del juego, y obligatorio cuando se exporta el juego para lanzarlo desde la aplicaci√≥n eAdventure Mobile.
 
 1) juego.ead
    ---------
@@ -12,37 +12,37 @@
 2) juego.ead ==> assets/
    ---------------------
    	Coloca el fichero 'juego.ead' dentro de la carpeta 'assets' del proyecto Eclipse de eAdventure Android Mobile.
-	Pueden incluirse tantos juegos como se desee dentro de la carpeta assets. Todos ellos se descomprimir·n en la carpeta
+	Pueden incluirse tantos juegos como se desee dentro de la carpeta assets. Todos ellos se descomprimir√°n en la carpeta
 	EAdAndroid que se crea dentro de la tarjeta SD del dispositivo cuando se instala eAdventure. En cualquier caso no se
-	recomienda abusar de esta funcionalidad porque aumenta mucho el peso de la aplicaciÛn. 
+	recomienda abusar de esta funcionalidad porque aumenta mucho el peso de la aplicaci√≥n. 
 
 3) es.eucm.androidgames.standalonegame ==> es.eucm.androidgames.juego
    ------------------------------------------------------------------
    Duplicar el paquete es.eucm.androidgames.standalonegame (contiene tres clases) y renombrarlo sustituyendo 'standalonegame' por el nombre del juego.
-   De ahora en adelante, Èste ser· el NOMBRE DE PAQUETE de tu App.
+   De ahora en adelante, √©ste ser√° el NOMBRE DE PAQUETE de tu App.
    
    Ejemplo: es.eucm.androidgames.damaboba
    
-   Las clases internas no hay que tocarlas, ˙nicamente asegurarse de que se crea un paquete nuevo.
+   Las clases internas no hay que tocarlas, √∫nicamente asegurarse de que se crea un paquete nuevo.
    Esto es necesario porque Android no deja que haya dos aplicaciones con el mismo nombre de paquete instaladas en el mismo dispositivo y por tanto,
-   no se podrÌa tener dos juegos instalados en el mismo dispositivo.
+   no se podr√≠a tener dos juegos instalados en el mismo dispositivo.
      
 4) AndroidManifest_game.xml --> AndroidManifest.xml
    ------------------------------------------------
    Sustituir el fichero 'AndroidManifest.xml' por el fichero 'AndroidManifest_game.xml'. Por seguridad, comprueba antes 
-   que el fichero 'AndroidManifest_app.xml' contiene una copia de seguridad del mismo (necesitar·s restituirlo al final).
+   que el fichero 'AndroidManifest_app.xml' contiene una copia de seguridad del mismo (necesitar√°s restituirlo al final).
 
 5) 3 o 4 cambios en AndroidManifest.xml
    ------------------------------------
-   - Reemplaza el nombre del paquete (package) por tu nombre de paquete, seg˙n lo hayas especificado en el paso 3.
-   - Reemplaza la etiqueta de la aplicaciÛn (android:label) por la etiqueta que quieras que vea el usuario (e.g. "La Dama Boba").
-   - Reemplaza el valor del meta dato android:name="es.eucm.eadandroid.launchgame" con el nombre de fichero de tu juego, tal y como lo aÒadiste
-     a la carpeta assets en el paso 2 pero sin la extensiÛn ".ead". En este caso, serÌa juego a secas.
-   - Recuerda poner la propiedad debuggable a false antes de generar la aplicaciÛn para ponerla en producciÛn.
+   - Reemplaza el nombre del paquete (package) por tu nombre de paquete, seg√∫n lo hayas especificado en el paso 3.
+   - Reemplaza la etiqueta de la aplicaci√≥n (android:label) por la etiqueta que quieras que vea el usuario (e.g. "La Dama Boba").
+   - Reemplaza el valor del meta dato android:name="es.eucm.eadandroid.launchgame" con el nombre de fichero de tu juego, tal y como lo a√±adiste
+     a la carpeta assets en el paso 2 pero sin la extensi√≥n ".ead". En este caso, ser√≠a juego a secas.
+   - Recuerda poner la propiedad debuggable a false antes de generar la aplicaci√≥n para ponerla en producci√≥n.
 
 6) drawable-long/ y drawable-notlong/
    ----------------------------------
-   Crea una subcarpeta dentro de la carpeta "res/" que se llame drawable-long y otra drawable-notlong/. Esto nos servir· para decirle a Android que utilice unos iconos
+   Crea una subcarpeta dentro de la carpeta "res/" que se llame drawable-long y otra drawable-notlong/. Esto nos servir√° para decirle a Android que utilice unos iconos
    y splash screen distintos de los habituales, pues drawable-long/ y drawable-notlong/ tienen mayor prioridad que drawable-hdpi y drawable-mdpi
    
 7) dialog_icon.png 			=> drawable-long/   (72x72)
@@ -50,26 +50,26 @@
    splash_screen.png		=> drawable-long/   (900x1500)
    standalone_game_icon.png => drawable-long/   (72x72)
    -------------------------------------------------------
-   Genera cuatro im·genes con las caracterÌsticas anteriores y colÛcales en la carpeta drawable-long/ que acabas de crear. No puedes cambiar
-   ning˙n nombre de fichero.
+   Genera cuatro im√°genes con las caracter√≠sticas anteriores y col√≥cales en la carpeta drawable-long/ que acabas de crear. No puedes cambiar
+   ning√∫n nombre de fichero.
 
 8) drawable-long/* => drawable-notlong/*
    --------------------------------------
-   Copia tambiÈn esas 4 im·genes a la carpeta drawable-notlong/
+   Copia tambi√©n esas 4 im√°genes a la carpeta drawable-notlong/
    
-9) Compila (aparecer·n errores)
+9) Compila (aparecer√°n errores)
    ----------------------------
    Al haber cambiado el Android Manifest, el compilador genera la clase R dentro de un paquete que no es es.eucm.eadandroid. Por tanto, salen muchos 
-   errores de compilaciÛn.
+   errores de compilaci√≥n.
 
 10) gen/es.eucm.androidgames.juego ==> gen/es.eucm.eadandroid
     ---------------------------------------------------------
-    Para arreglar los problemas encontrados antes, simplemente duplica el paquete es.eucm.androidgames.juego generado autom·ticamente dentro de la 
-    carpeta gen/. Al nuevo paquete dale el nombre es.eucm.eadandroid. Vuelve a compilar y desaparecer·n los problemas de compilaciÛn.
+    Para arreglar los problemas encontrados antes, simplemente duplica el paquete es.eucm.androidgames.juego generado autom√°ticamente dentro de la 
+    carpeta gen/. Al nuevo paquete dale el nombre es.eucm.eadandroid. Vuelve a compilar y desaparecer√°n los problemas de compilaci√≥n.
 
 11) Generar la app.
     --------------
-    Genera el fichero apk (por ejemplo, lanzando la aplicaciÛn con un terminal Android conectado al equipo). 
+    Genera el fichero apk (por ejemplo, lanzando la aplicaci√≥n con un terminal Android conectado al equipo). 
 
 12) Cleanup.
     --------

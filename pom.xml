@@ -63,7 +63,6 @@
 						<sdk>
 							<path>${env.ANDROID_HOME}</path>
 							<platform>${android.platform}</platform>	
-							<buildtools>19</buildtools>
 						</sdk>
 					</configuration>
 				</plugin>

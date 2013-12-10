@@ -126,46 +126,98 @@ public class EngineResInstaller extends Thread {
 
 	}
 
+	public boolean isInstallOrUpdateNeeded(){
+		//First, check EadAndroid.zip is already unzipped and available
+		boolean needed = !new File(Paths.eaddirectory.ROOT_PATH).exists();
+		
+		// Second, check if there are game updates, just in case
+		if (!needed){
+			try {
+				for (String gameFile:con.getAssets().list("")){
+					if (!gameFile.toLowerCase().endsWith(".ead"))
+						continue;
+					
+					if (!new File(Paths.eaddirectory.GAMES_PATH+"/"+gameFile.substring(0, gameFile.lastIndexOf("."))).exists()) {
+						needed=true;break;
+					}
+				}
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		return needed;
+	}
+	
 	/**
 	 * Extract the resources to the eAdventure folder
 	 */
 	private void init() {
 		if (!new File(Paths.eaddirectory.ROOT_PATH).exists()) {
-
+			System.out.println(" **** Trying to install EadAndroid.zip ****");
 			try {
 				InputStream is = con.getAssets().open("EadAndroid.zip");
 				BufferedOutputStream file;
 				file = new BufferedOutputStream(new FileOutputStream(
 				"/sdcard/EadAndroid.zip"));
+				System.out.println(" **** Trying to copy EadAndroid.zip to sdcard****");
 				RepoResourceHandler.copyInputStream(is, file);
+				System.out.println(" **** EadAndroid.zip copied succesfully****");
 
 			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
+				System.out.println(" **** Failed to copy EadAndroid.zip to sdcard****");
+				System.out.println(" **** Failed to install EadAndroid.zip ****");
 				e.printStackTrace();
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
+				System.out.println(" **** Failed to copy EadAndroid.zip to sdcard****");
+				System.out.println(" **** Failed to install EadAndroid.zip ****");
 				e.printStackTrace();
 			}
 
+			try {
+				System.out.println(" **** Trying to unzip EadAndroid.zip to sdcard****");
 			RepoResourceHandler.unzip(Paths.device.EXTERNAL_STORAGE,
 					Paths.device.EXTERNAL_STORAGE, "EadAndroid.zip", true);
+			System.out.println(" **** EadAndroid.zip unzipped succesfully****");
+			} catch (Exception e){
+				System.out.println(" **** Trying to unzip EadAndroid.zip to sdcard****");
+				System.out.println(" **** Failed to install EadAndroid.zip ****");
+				e.printStackTrace();
+			}
 			
-			try {
-				for (String gameFile:con.getAssets().list("")){
-					if (!gameFile.toLowerCase().endsWith(".ead"))
-						continue;
+		} else {
+			System.out.println(" **** Skipping EadAndroid.zip ****");
+		}
+			
+		
+		
+		
+		try {
+			for (String gameFile:con.getAssets().list("")){
+				if (!gameFile.toLowerCase().endsWith(".ead"))
+					continue;
+				
+				if (!new File(Paths.eaddirectory.GAMES_PATH+"/"+gameFile.substring(0, gameFile.lastIndexOf("."))).exists()) {
+				
+					System.out.println(" **** Trying to install game "+gameFile+" ****");
 					InputStream is = con.getAssets().open(gameFile);
 					BufferedOutputStream file;
 					file = new BufferedOutputStream(new FileOutputStream(
 					"/sdcard/"+gameFile));
+					System.out.println(" **** Trying to copy game "+gameFile+" to SDCard****");
 					RepoResourceHandler.copyInputStream(is, file);
-					
+					System.out.println(" **** Game "+gameFile+" copied succesfully ****");
+					System.out.println(" **** Trying to unzip game "+gameFile+" into "+Paths.eaddirectory.GAMES_PATH+" ****");
 					RepoResourceHandler.unzip(Paths.device.EXTERNAL_STORAGE,
 							Paths.eaddirectory.GAMES_PATH, gameFile, true);
+					System.out.println(" **** Game "+gameFile+" unzipped succesfully ****");
+				} else {
+					System.out.println(" **** Skipping game "+gameFile+" ****");
 				}
-			} catch (IOException e) {
-				e.printStackTrace();
 			}
+		} catch (IOException e) {
+			System.out.println(" **** Failed to install games ****");
+			e.printStackTrace();
 		}
 	}
 

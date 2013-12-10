@@ -133,9 +133,9 @@ public class SplashScreenActivity extends Activity{
 
 		setContentView(R.layout.splash_screen);
 
-		if (!RepoResourceHandler.checkEadDirectory(Paths.eaddirectory.ROOT_PATH)) {
+		EngineResInstaller is = new EngineResInstaller(this, ActivityHandler);
+		if (is.isInstallOrUpdateNeeded()) {
 			installing = true;
-			EngineResInstaller is = new EngineResInstaller(this, ActivityHandler);
 			is.start();
 
 			dialog = new ProgressDialog(this);

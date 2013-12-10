@@ -9,7 +9,7 @@
             (School of Computer Science).
          
             C Profesor Jose Garcia Santesmases sn,
-            28040 Madrid (Madrid), Spain.
+            28040 Madrid (Madrid), Spain.ead-legacy-android-dama-boba.apk
         
             For more info please visit:  <http://e-adventure.e-ucm.es/android> or
             <http://www.e-ucm.es>
@@ -87,7 +87,7 @@
 		 ############################################################### -->    
 	    		
 		<activity android:name="StandaloneSplashScreen" android:screenOrientation="portrait">
-		    <meta-data android:name="es.eucm.eadandroid.launchgame" android:value="LaDamaBoba" />
+		    <meta-data android:name="es.eucm.eadandroid.launchgame" android:value="La Dama Boba" />
 			 <!-- ###############################################################
 			 3) Replace ###GAME FILE NAME HERE### in the line above by the name of the Game's EAD file you want
 			    your app to launch. Type it exactly as it is shown in the filename under the assets folder

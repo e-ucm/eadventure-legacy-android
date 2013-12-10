@@ -61,8 +61,9 @@
 					<extensions>true</extensions>
 					<configuration>
 						<sdk>
-				    	<path>${env.ANDROID_HOME}</path>
+							<path>${env.ANDROID_HOME}</path>
 							<platform>${android.platform}</platform>	
+							<buildtools>19</buildtools>
 						</sdk>
 					</configuration>
 				</plugin>

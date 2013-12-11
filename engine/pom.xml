@@ -45,6 +45,9 @@
 			<plugin>
 				<groupId>com.jayway.maven.plugins.android.generation2</groupId>
 				<artifactId>android-maven-plugin</artifactId>
+				<configuration>
+			    	<attachSources>true</attachSources>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

@@ -46,8 +46,8 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	
-	package="es.eucm.androidgames.damaboba" android:versionCode="701"
-	android:versionName="7.0.1">
+	package="es.eucm.androidgames.damaboba" android:versionCode="702"
+	android:versionName="7.0.2">
 	
 	<!-- ###############################################################
 	 1) Replace YOUR_GAME_NAME_HERE in the line above by the name of the game. Type it exactly as 
